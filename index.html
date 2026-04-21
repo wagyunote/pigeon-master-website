@@ -567,7 +567,13 @@
     /* ─── PROCESS ─── */
     #process {
       padding: 7rem 6rem;
-      background: var(--forest);
+      background:
+        linear-gradient(to bottom,
+          rgba(15,28,20,0.92) 0%,
+          rgba(15,28,20,0.85) 40%,
+          rgba(15,28,20,0.92) 100%
+        ),
+        url("https://images.unsplash.com/photo-1515543237350-b3eea1b804e3?w=1920&q=80") center/cover no-repeat;
     }
     .process-header { text-align: center; margin-bottom: 5rem; }
     .process-header .gold-line { margin: 1.5rem auto 2rem; }
@@ -1132,33 +1138,68 @@
 
 
 
-<!-- ─── PROCESS ─── -->
+<!-- ─── PROCESS (乳鴿營養) ─── -->
 <section id="process">
   <div class="process-header reveal">
-    <p class="section-label" style="color:var(--gold)">製作工藝</p>
-    <h2 class="section-title light">四步精燉工藝</h2>
+    <p class="section-label" style="color:var(--gold)">乳鴿營養</p>
+    <h2 class="section-title light">一鴿抵九雞</h2>
     <div class="gold-line"></div>
   </div>
-  <div class="process-steps">
-    <div class="process-step reveal">
-      <div class="step-dot">一</div>
-      <div class="step-title">嚴選食材</div>
-      <div class="step-desc">精選28天乳鴿，配合道地藥材與珍貴菌菇，每批次嚴格品質把關，確保最高標準。</div>
+  <div class="nutrition-content" style="max-width:900px;margin:0 auto;">
+    <p class="reveal" style="color:var(--cream);opacity:0.9;font-size:1.1rem;text-align:center;margin-bottom:3rem;line-height:1.8;">
+      「一鴿抵九雞」是一句流傳甚廣的中醫食療俗諺，主要在強調鴿肉的營養價值與藥用功效遠高於雞肉。
+    </p>
+
+    <!-- 1. 中醫藥典的推崇 -->
+    <div class="nutrition-block reveal" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:2rem;margin-bottom:2rem;border-left:3px solid var(--gold);">
+      <h3 style="color:var(--gold);font-size:1.2rem;margin-bottom:1rem;font-family:'Noto Serif TC',serif;">1. 中醫藥典的推崇</h3>
+      <p style="color:var(--cream);opacity:0.85;line-height:1.9;">
+        在傳統中醫觀念中，鴿肉被稱為「大補之物」。
+      </p>
+      <div style="margin-top:1rem;">
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;"><strong style="color:var(--gold);">藥性：</strong>《本草綱目》記載鴿肉「性平、味鹹、無毒」，具有滋陰壯陽、補氣養血、養顏美容等功效。</p>
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;margin-top:0.8rem;"><strong style="color:var(--gold);">對比：</strong>相較於雞肉，中醫認為鴿肉的「血肉有情之品」特性更強，對於手術後癒合、病後體虛的人來說，鴿肉的滲透與修補作用被認為比雞肉更顯著。</p>
+      </div>
     </div>
-    <div class="process-step reveal reveal-delay-1">
-      <div class="step-dot">二</div>
-      <div class="step-title">藥材配伍</div>
-      <div class="step-desc">依照中醫君臣佐使原則，精準配比多味藥材，發揮最大協同效果。</div>
+
+    <!-- 2. 營養學角度的數據 -->
+    <div class="nutrition-block reveal reveal-delay-1" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:2rem;margin-bottom:2rem;border-left:3px solid var(--gold);">
+      <h3 style="color:var(--gold);font-size:1.2rem;margin-bottom:1rem;font-family:'Noto Serif TC',serif;">2. 營養學角度的數據</h3>
+      <p style="color:var(--cream);opacity:0.85;line-height:1.9;">
+        雖然「九隻雞」在量化上稍嫌誇張，但鴿肉在密度上的確有其優勢：
+      </p>
+      <div style="margin-top:1rem;">
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;"><strong style="color:var(--gold);">高蛋白質：</strong>鴿肉的蛋白質含量通常在 22% 以上，而雞肉約為 18-20%。</p>
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;margin-top:0.8rem;"><strong style="color:var(--gold);">低脂肪：</strong>鴿子屬於飛禽，肌肉運動量大，其脂肪含量極低（約 0.3-0.7%），且多為不飽和脂肪酸，比雞肉更容易被人體消化吸收。</p>
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;margin-top:0.8rem;"><strong style="color:var(--gold);">微量元素：</strong>鴿肉中的鐵、鈣、銅等礦物質以及維生素 A、B、E 的含量，確實普遍高於同質量的雞肉。</p>
+      </div>
     </div>
-    <div class="process-step reveal reveal-delay-2">
-      <div class="step-dot">三</div>
-      <div class="step-title">慢火細燉</div>
-      <div class="step-desc">傳統瓦罐慢火燉製六小時，低溫萃取，保留藥材活性成分與鮮甜滋味。</div>
+
+    <!-- 3. 民間養生文化 -->
+    <div class="nutrition-block reveal reveal-delay-2" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:2rem;margin-bottom:2rem;border-left:3px solid var(--gold);">
+      <h3 style="color:var(--gold);font-size:1.2rem;margin-bottom:1rem;font-family:'Noto Serif TC',serif;">3. 民間養生文化</h3>
+      <p style="color:var(--cream);opacity:0.85;line-height:1.9;">
+        在民間，這句話更多是為了強調「物以稀為貴」。
+      </p>
+      <div style="margin-top:1rem;">
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;"><strong style="color:var(--gold);">生長周期：</strong>鴿子多由親鴿產下「鴿乳」哺育，產量遠低於雞隻。</p>
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;margin-top:0.8rem;"><strong style="color:var(--gold);">食療地位：</strong>過去鴿子不像雞隻可以大量圈養，因此在物資匱乏的年代，能吃上一隻鴿子被視為極高級的補養，進而神話了它的功效。</p>
+      </div>
     </div>
-    <div class="process-step reveal reveal-delay-3">
-      <div class="step-dot">四</div>
-      <div class="step-title">品質檢驗</div>
-      <div class="step-desc">每批次出品前進行色澤、香氣、口感三重檢驗，確保每一口都是極致享受。</div>
+
+    <!-- 溫馨小提醒 -->
+    <div class="nutrition-tip reveal reveal-delay-3" style="background:linear-gradient(135deg,rgba(201,168,76,0.1),rgba(201,168,76,0.05));border-radius:12px;padding:2rem;border:1px solid rgba(201,168,76,0.3);">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;">
+        <span style="font-size:1.5rem;">💡</span>
+        <h3 style="color:var(--gold);font-size:1.1rem;font-family:'Noto Serif TC',serif;margin:0;">溫馨小提醒</h3>
+      </div>
+      <p style="color:var(--cream);opacity:0.85;line-height:1.9;">
+        雖然鴿肉營養極佳，但現代營養學認為這句話主要是誇張修辭。
+      </p>
+      <div style="margin-top:1rem;">
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;"><strong style="color:var(--gold);">營養平衡：</strong>鴿肉含有較多支鏈胺基酸，對傷口癒合確實有幫助，但並不代表吃一隻鴿子真的能抵銷九隻雞的熱量或總營養。</p>
+        <p style="color:var(--cream);opacity:0.8;line-height:1.8;margin-top:0.8rem;"><strong style="color:var(--gold);">體質限制：</strong>鴿肉偏溫補，若是正值感冒發燒、燥熱體質或是皮膚過敏嚴重時，建議適量食用。</p>
+      </div>
     </div>
   </div>
 </section>
