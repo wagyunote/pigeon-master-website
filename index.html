@@ -26,7 +26,7 @@
 
     body {
       background: var(--cream);
-      color: var(--ink);
+      color: var(--forest);
       font-family: 'Noto Sans TC', sans-serif;
       font-weight: 300;
       overflow-x: hidden;
@@ -63,7 +63,7 @@
       letter-spacing: .12em;
       text-decoration: none;
     }
-    .nav-logo span { color: var(--gold); }
+    .nav-logo span { color: var(--cream); }
     .nav-links { display: flex; gap: 2.4rem; list-style: none; }
     .nav-links a {
       font-size: .78rem;
@@ -77,11 +77,11 @@
     .nav-links a::after {
       content: '';
       position: absolute; bottom: -3px; left: 0; right: 0;
-      height: 1px; background: var(--gold);
+      height: 1px; background: linear-gradient(90deg, var(--gold), transparent);
       transform: scaleX(0); transform-origin: right;
       transition: transform .3s ease;
     }
-    .nav-links a:hover { color: var(--crimson); }
+    .nav-links a:hover { color: var(--cream); }
     .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
     .nav-cta {
       font-size: .75rem; letter-spacing: .2em;
@@ -94,7 +94,7 @@
       text-transform: uppercase;
       transition: background .25s, color .25s;
     }
-    .nav-cta:hover { background: var(--crimson); color: var(--gold-pale); border-color: var(--crimson); }
+    .nav-cta:hover { background: rgba(201,168,76,0.12); color: rgba(201,168,76,0.75); border-color: var(--cream); }
 
     /* ─── HERO ─── */
     #hero {
@@ -169,7 +169,7 @@
     }
     .btn-primary {
       padding: .85rem 2.4rem;
-      background: linear-gradient(90deg, var(--gold), transparent);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
       color: var(--crimson-dk);
       font-size: .78rem; letter-spacing: .2em;
       text-transform: uppercase;
@@ -177,7 +177,8 @@
       font-weight: 500;
       transition: background .25s, transform .2s;
     }
-    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--gold-lt);
+  box-shadow: 0 8px 30px rgba(201,168,76,0.35); transform: translateY(-2px); }
     .btn-ghost {
       padding: .85rem 2.4rem;
       border: 1px solid rgba(201,168,76,.5);
@@ -188,7 +189,7 @@
       text-decoration: none;
       transition: border-color .25s, color .25s;
     }
-    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-ghost:hover { border-color: var(--cream); color: var(--cream); }
 
     .hero-right {
       position: relative;
@@ -278,10 +279,10 @@
       line-height: 1.2;
       color: var(--crimson-dk);
     }
-    .section-title.light { color: var(--ivory); }
+    .section-title.light { color: var(--cream); }
     .gold-line {
       width: 50px; height: 2px;
-      background: linear-gradient(90deg, var(--gold), transparent);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
       margin: 1.5rem 0 2rem;
     }
 
@@ -312,7 +313,7 @@
   text-shadow: 0 0 20px rgba(201,168,76,0.2);
       line-height: 1;
     }
-    .stat-label { font-size: .75rem; letter-spacing: .15em; color: var(--smoke); margin-top: .3rem; }
+    .stat-label { font-size: .75rem; letter-spacing: .15em; color: rgba(250,246,238,0.65); margin-top: .3rem; }
     .about-visual {
       position: relative;
       height: 500px;
@@ -330,7 +331,7 @@
     .about-card-accent {
       bottom: 0; right: 0;
       width: 200px; height: 200px;
-      background: linear-gradient(90deg, var(--gold), transparent);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
       display: flex; align-items: center; justify-content: center;
     }
     .about-card-main-inner {
@@ -338,7 +339,7 @@
       font-size: 1.1rem; line-height: 1.8;
       color: rgba(250,246,238,.8);
     }
-    .about-card-main-inner strong { color: var(--gold); font-weight: 500; }
+    .about-card-main-inner strong { color: var(--cream); font-weight: 500; }
     .about-accent-text {
       font-family: 'Noto Serif TC', serif;
       font-size: 1.4rem; font-weight: 700;
@@ -377,12 +378,12 @@
       overflow: hidden;
       transition: background .3s;
     }
-    .menu-item:hover { background: rgba(78,15,24,.9); }
+    .menu-item:hover { background: rgba(25,50,30,.95); }
     .menu-item::before {
       content: '';
       position: absolute; top: 0; left: 0;
       width: 3px; height: 0;
-      background: linear-gradient(90deg, var(--gold), transparent);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
       transition: height .4s ease;
     }
     .menu-item:hover::before { height: 100%; }
@@ -468,8 +469,8 @@
     }
     .video-play svg { fill: var(--gold); width: 18px; margin-left: 3px; }
     .video-card:hover .video-play {
-      background: linear-gradient(90deg, var(--gold), transparent);
-      border-color: var(--gold);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
+      border-color: var(--cream);
       transform: translate(-50%,-50%) scale(1.1);
     }
     .video-card:hover .video-play svg { fill: var(--crimson-dk); }
@@ -520,6 +521,7 @@
       border: 1px solid var(--gold);
       display: flex; align-items: center; justify-content: center;
       font-size: 1.3rem;
+  text-shadow: 0 0 20px rgba(201,168,76,0.15);
     }
     .herbal-info h4 {
       font-family: 'Noto Serif TC', serif;
@@ -527,7 +529,7 @@
       color: var(--crimson-dk);
       margin-bottom: .3rem;
     }
-    .herbal-info p { font-size: .82rem; line-height: 1.7; color: var(--smoke); }
+    .herbal-info p { font-size: .82rem; line-height: 1.7; color: rgba(250,246,238,0.65); }
     .herbal-visual {
       position: relative;
     }
@@ -552,6 +554,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-size: 1.3rem;
+  text-shadow: 0 0 20px rgba(201,168,76,0.15);
       color: var(--cream);
   font-size: 1.1rem;
   text-shadow: 0 0 20px rgba(201,168,76,0.2);
@@ -631,7 +634,7 @@
       position: relative;
       transition: border-color .3s, transform .3s;
     }
-    .testimonial-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .testimonial-card:hover { border-color: var(--cream); transform: translateY(-4px); }
     .testimonial-card::before {
       content: '\201C';
       font-family: 'Cormorant Garamond', serif;
@@ -654,22 +657,22 @@
     .author-avatar {
       width: 40px; height: 40px;
       border-radius: 50%;
-      background: var(--crimson);
+      background: rgba(201,168,76,0.12);
       display: flex; align-items: center; justify-content: center;
       font-family: 'Noto Serif TC', serif;
-      font-size: .9rem; color: var(--gold);
+      font-size: .9rem; color: var(--cream);
     }
     .author-name {
       font-size: .82rem; font-weight: 500;
       color: var(--crimson-dk);
     }
-    .author-role { font-size: .72rem; color: var(--smoke); margin-top: .1rem; }
-    .stars { color: var(--gold); font-size: .8rem; margin-bottom: .8rem; }
+    .author-role { font-size: .72rem; color: rgba(250,246,238,0.65); margin-top: .1rem; }
+    .stars { color: var(--cream); font-size: .8rem; margin-bottom: .8rem; }
 
     /* ─── CTA BANNER ─── */
     #cta {
       padding: 7rem 6rem;
-      background: linear-gradient(90deg, var(--gold), transparent);
+      background: linear-gradient(135deg, rgba(201,168,76,0.25), transparent 60%);
       display: flex; align-items: center; justify-content: space-between;
       gap: 3rem;
     }
@@ -696,7 +699,7 @@
       font-weight: 500;
       transition: background .25s;
     }
-    .btn-dark:hover { background: var(--crimson); }
+    .btn-dark:hover { background: rgba(201,168,76,0.12); }
     .btn-outline-dark {
       padding: 1rem 2.8rem;
       border: 1.5px solid var(--crimson-dk);
@@ -706,7 +709,7 @@
       text-decoration: none;
       transition: background .25s, color .25s;
     }
-    .btn-outline-dark:hover { background: var(--crimson-dk); color: var(--gold-pale); }
+    .btn-outline-dark:hover { background: var(--forest); color: rgba(201,168,76,0.75); }
 
     /* ─── FOOTER ─── */
     footer {
@@ -750,7 +753,7 @@
       text-decoration: none;
       transition: color .2s;
     }
-    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-col ul li a:hover { color: var(--cream); }
     .footer-bottom {
       display: flex; justify-content: space-between; align-items: center;
       padding-top: 2rem;
@@ -766,7 +769,7 @@
       font-size: .8rem;
       transition: border-color .2s, color .2s;
     }
-    .social-link:hover { border-color: var(--gold); color: var(--gold); }
+    .social-link:hover { border-color: var(--cream); color: var(--cream); }
 
     /* ─── ANIMATIONS ─── */
     @keyframes fadeUp {
@@ -837,6 +840,7 @@
 .menu-category-title {
   font-family: 'Noto Serif TC', serif;
   font-size: 1.3rem;
+  text-shadow: 0 0 20px rgba(201,168,76,0.15);
   font-weight: 500;
   color: var(--cream);
   font-size: 1.1rem;
