@@ -801,7 +801,25 @@
       .video-grid { grid-template-columns: 1fr; }
       .about-stats { grid-template-columns: 1fr; }
     }
-  </style>
+  
+/* Menu Category */
+.menu-category {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+.menu-category-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+.menu-category-desc {
+  font-size: 0.85rem;
+  color: rgba(250,246,238,.7);
+  margin-bottom: 0.5rem;
+}
+</style>
 </head>
 <body>
 
@@ -898,51 +916,79 @@
 </section>
 
 <!-- ─── MENU ─── -->
+<!-- ─── MENU ─── -->
 <section id="menu">
   <div class="menu-header reveal">
     <p class="section-label">招牌菜單</p>
-    <h2 class="section-title light">精選藥膳系列</h2>
+    <h2 class="section-title light">精選養生系列</h2>
     <div class="gold-line"></div>
+  </div>
+
+  <!-- 乳鴿類 -->
+  <div class="menu-category reveal">
+    <h3 class="menu-category-title">🍖 乳鴿類 · 已屠宰完成</h3>
   </div>
   <div class="menu-grid">
     <div class="menu-item reveal">
       <div class="menu-num">01</div>
-      <div class="menu-name">帝王藥膳燉乳鴿</div>
-      <div class="menu-desc">選用二十天乳鴿，掛爐慢烤至表皮金黃酥脆，肉質軟嫩多汁，每一口都是極致享受。</div>
-      <span class="menu-tag">招牌必點</span>
+      <div class="menu-name">精選乳鴿</div>
+      <div class="menu-desc">二十天齡石岐乳鴿，已屠宰處理完成，皮脆肉嫩，適合自行烹調或搭配湯包燉煮。</div>
+      <span class="menu-tag">新鮮直送</span>
     </div>
     <div class="menu-item reveal reveal-delay-1">
       <div class="menu-num">02</div>
+      <div class="menu-name">帝王藥膳乳鴿套組</div>
+      <div class="menu-desc">精選乳鴿搭配帝王藥膳湯包，人參、枸杞、當歸等28味藥材，滋補養顏首選。</div>
+      <span class="menu-tag">招牌推薦</span>
+    </div>
+  </div>
+
+  <!-- 藥膳湯包類 -->
+  <div class="menu-category reveal">
+    <h3 class="menu-category-title">🫕 藥膳湯包類 · 術前術後調理</h3>
+    <p class="menu-category-desc">適合：術前術後補充營養 · 養生保健 · 轉大人 · 補充體力</p>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item reveal">
+      <div class="menu-num">03</div>
       <div class="menu-name">四物補血湯包</div>
       <div class="menu-desc">當歸、川芎、白芍、熟地黃四味經典藥材，專為女性調理設計，補血養氣，氣色紅潤。</div>
       <span class="menu-tag">女性首選</span>
     </div>
+    <div class="menu-item reveal reveal-delay-1">
+      <div class="menu-num">04</div>
+      <div class="menu-name">天麻健腦湯包</div>
+      <div class="menu-desc">天麻、石菖蒲、遠志三味健腦藥材，搭配核桃，提神醒腦，適合學生及上班族。</div>
+      <span class="menu-tag">健腦精選</span>
+    </div>
     <div class="menu-item reveal reveal-delay-2">
-      <div class="menu-num">03</div>
+      <div class="menu-num">05</div>
+      <div class="menu-name">紅棗桂圓養生包</div>
+      <div class="menu-desc">新疆紅棗、廣東桂圓，甜潤滋補，安神助眠，老少皆宜的溫和養生選擇。</div>
+      <span class="menu-tag">溫和養生</span>
+    </div>
+  </div>
+
+  <!-- 菌蕈湯包類 -->
+  <div class="menu-category reveal">
+    <h3 class="menu-category-title">🍄 菌蕈湯包類 · 珍貴菌菇</h3>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item reveal">
+      <div class="menu-num">06</div>
       <div class="menu-name">蟲草花菌菇湯包</div>
       <div class="menu-desc">珍貴蟲草花搭配玉竹、百合，清潤滋補，增強免疫力，適合四季食用。</div>
       <span class="menu-tag">養生精選</span>
     </div>
     <div class="menu-item reveal reveal-delay-1">
-      <div class="menu-num">04</div>
+      <div class="menu-num">07</div>
       <div class="menu-name">黑蒜菌菇湯包</div>
-      <div class="menu-desc">發酵黑蒜搭配老薑，暖胃驅寒，提升代謝，秋冬季節最佳暖身選擇。</div>
-      <span class="menu-tag">秋冬限定</span>
-    </div>
-    <div class="menu-item reveal reveal-delay-2">
-      <div class="menu-num">05</div>
-      <div class="menu-name">天麻健腦湯包</div>
       <div class="menu-desc">黑蒜搭配香菇、舞菇、杏鮑菇，濃郁鮮香，抗氧化強身，適合術後調理。</div>
-      <span class="menu-tag">腦力補給</span>
-    </div>
-    <div class="menu-item reveal reveal-delay-3">
-      <div class="menu-num">06</div>
-      <div class="menu-name">紅棗桂圓養生包</div>
-      <div class="menu-desc">天麻、石菖蒲、遠志三味健腦藥材，搭配核桃，提神醒腦，適合學生及上班族。</div>
-      <span class="menu-tag">全家適用</span>
+      <span class="menu-tag">術後調理</span>
     </div>
   </div>
 </section>
+
 
 <!-- ─── VIDEO ─── -->
 <section id="video">
